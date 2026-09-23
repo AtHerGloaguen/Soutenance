@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cours et script — RNCP38777</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#faf6ec;
+    --surface:#ffffff;
+    --line:#e6ddc8;
+    --text:#2b2b28;
+    --text-dim:#4a473f;
+    --accent:#6b4a1f;
+    --accent-bg:#f1e8d4;
+    --ok:#2e6b45;
+    --ok-bg:#e7f1ea;
+    --info:#2b5570;
+    --info-bg:#e8eff3;
+    --b1:#2e6b45; --b1-bg:#e7f1ea;
+    --b2:#2b5570; --b2-bg:#e8eff3;
+    --b3:#8a3324; --b3-bg:#f5e6e2;
+    --b4:#6b4a1f; --b4-bg:#f1e8d4;
+    --font: 'Lexend', Arial, Verdana, sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:var(--font);
+    font-size:19px;
+    line-height:1.85;
+    letter-spacing:.01em;
+  }
+  .page{max-width:720px;margin:0 auto;padding:44px 24px 110px}
+  h1,h2,h3{font-family:var(--font);font-weight:700;color:var(--text);line-height:1.3;text-align:left}
+  h1{font-size:30px;margin:0 0 10px}
+  h2{font-size:24px;margin:0;padding:0}
+  h3{font-size:19px;margin:26px 0 10px;color:var(--accent)}
+  p{margin:0 0 20px;text-align:left;max-width:38em}
+  ul,ol{margin:0 0 20px;padding-left:26px;max-width:38em}
+  li{margin-bottom:10px}
+  strong{color:var(--text);font-weight:700}
+  em{font-style:normal;font-weight:600;color:var(--accent)}
+  a{color:var(--accent)}
+
+  .intro-note{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px 20px;margin:22px 0 8px;font-size:16.5px;color:var(--text-dim)}
+
+  .sommaire{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:20px 24px;margin:24px 0}
+  .sommaire ul{margin:0;padding-left:22px}
+  .sommaire a{text-decoration:none}
+  .sommaire a:hover{text-decoration:underline}
+  .sommaire .b1{color:var(--b1)} .sommaire .b2{color:var(--b2)} .sommaire .b3{color:var(--b3)} .sommaire .b4{color:var(--b4)}
+
+  .bloc{margin-top:60px;padding-top:14px;border-top:4px solid var(--line)}
+  .bloc.b1{border-top-color:var(--b1)} .bloc.b2{border-top-color:var(--b2)} .bloc.b3{border-top-color:var(--b3)} .bloc.b4{border-top-color:var(--b4)}
+  .bloc-head{padding:14px 20px;border-radius:10px;margin-bottom:8px}
+  .bloc.b1 .bloc-head{background:var(--b1-bg)} .bloc.b2 .bloc-head{background:var(--b2-bg)} .bloc.b3 .bloc-head{background:var(--b3-bg)} .bloc.b4 .bloc-head{background:var(--b4-bg)}
+  .bloc-eyebrow{font-size:14px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;margin-bottom:4px}
+  .bloc.b1 .bloc-eyebrow{color:var(--b1)} .bloc.b2 .bloc-eyebrow{color:var(--b2)} .bloc.b3 .bloc-eyebrow{color:var(--b3)} .bloc.b4 .bloc-eyebrow{color:var(--b4)}
+
+  .partie-titre{font-size:14px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--text-dim);margin:34px 0 10px}
+
+  .mot{background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--info);border-radius:8px;padding:14px 18px;margin:0 0 14px}
+  .mot .terme{font-weight:700;color:var(--info);font-size:18px;display:block;margin-bottom:4px}
+
+  blockquote.dire{background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--ok);border-radius:8px;padding:18px 22px;margin:16px 0}
+  blockquote.dire p{margin-bottom:14px}
+  blockquote.dire p:last-child{margin-bottom:0}
+
+  .repere{font-size:15px;font-weight:600;color:var(--ok);background:var(--ok-bg);display:inline-block;padding:3px 12px;border-radius:20px;margin-bottom:10px}
+
+  footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);font-size:15px;color:var(--text-dim)}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <h1>Cours et script — RNCP38777</h1>
+  <p>Ce document a une partie pour chaque bloc, de 1 à 4. Pour chaque bloc, il y a d'abord un petit cours. Le cours explique ce qui était demandé, avec des mots simples. Ensuite vient le script, avec les phrases à dire à l'oral.</p>
+
+  <div class="intro-note">
+    Ce texte est écrit pour être lu à voix haute, par exemple avec le lecteur immersif d'Edge. Les phrases sont courtes. Chaque paragraphe contient une seule idée.
+  </div>
+
+  <div class="sommaire">
+    <strong>Sommaire</strong>
+    <ul>
+      <li><a class="b1" href="#bloc1">Bloc 1 — Gouvernance des données Spotify</a></li>
+      <li><a class="b2" href="#bloc2">Bloc 2 — Architecture de données Stripe</a></li>
+      <li><a class="b3" href="#bloc3">Bloc 3 — Détection de fraude</a></li>
+      <li><a class="b4" href="#bloc4">Bloc 4 — Projet final MLOps</a></li>
+    </ul>
+  </div>
+
+  <!-- ================================================================= BLOC 1 -->
+  <section class="bloc b1" id="bloc1">
+    <div class="bloc-head">
+      <div class="bloc-eyebrow">Bloc 1</div>
+      <h2>Gouvernance des données — Spotify</h2>
+    </div>
+
+    <div class="partie-titre">Le cours</div>
+
+    <h3>Ce qui était attendu</h3>
+    <p>Le projet demande de se mettre à la place d'un spécialiste de la gouvernance des données chez Spotify.</p>
+    <p>Le but est de construire un cadre de règles. Ce cadre doit garantir trois choses : des données de bonne qualité, des données protégées, et des données conformes à la loi.</p>
+    <p>Trois lois comptent particulièrement : le RGPD en Europe, le CCPA en Californie, et le PCI-DSS pour les cartes bancaires.</p>
+    <p>Quatre documents étaient demandés : une politique de gouvernance, un plan des rôles, un plan de mise en œuvre, et une présentation finale.</p>
+    <p>Le travail est noté sur quatre points : est-ce que le cadre est réaliste ? Est-ce qu'il respecte bien les lois ? Est-ce qu'il apporte un vrai bénéfice à l'entreprise ? Et est-ce que la présentation orale est claire ?</p>
+
+    <h3>Vocabulaire</h3>
+    <div class="mot"><span class="terme">Gouvernance des données</span>L'ensemble des règles qui disent qui a le droit de voir, de changer, ou d'utiliser une donnée.</div>
+    <div class="mot"><span class="terme">RGPD</span>Le règlement européen qui protège les données personnelles.</div>
+    <div class="mot"><span class="terme">CCPA</span>La loi équivalente, en Californie.</div>
+    <div class="mot"><span class="terme">PCI-DSS</span>La norme de sécurité pour les données de carte bancaire.</div>
+    <div class="mot"><span class="terme">Data Owner</span>La personne responsable d'un type de donnée.</div>
+    <div class="mot"><span class="terme">Data Steward</span>La personne qui s'occupe de cette donnée au quotidien.</div>
+    <div class="mot"><span class="terme">CMMI</span>Une échelle à cinq niveaux. Elle mesure à quel point une entreprise gère bien ses données.</div>
+    <div class="mot"><span class="terme">Centre d'Excellence</span>Une petite équipe centrale. Elle fixe des règles communes, que les autres équipes appliquent ensuite.</div>
+
+    <div class="partie-titre">Le script à dire</div>
+
+    <h3>1. Accroche</h3>
+    <span class="repere">à dire</span>
+    <blockquote class="dire"><p>« 678 millions de personnes font confiance à Spotify avec leurs données personnelles, leurs habitudes d'écoute, leurs données de paiement. Spotify génère 500 téraoctets de données comportementales chaque jour. La question n'est pas de savoir si Spotify a besoin d'une gouvernance des données — c'est de savoir quelle gouvernance est à la hauteur de cette responsabilité. »</p></blockquote>
+
+    <h3>2. Contexte et enjeux</h3>
+    <span class="repere">à dire</span>
+    <blockquote class="dire">
+      <p>« Spotify n'est pas une entreprise musicale avec des données. C'est une entreprise de données qui distribue de la musique. »</p>
+      <p>« Trois enjeux résument pourquoi nous sommes ici aujourd'hui : le risque légal — jusqu'à 640 millions d'euros pour une violation grave du RGPD. 
+	  Le risque qualité — les labels musicaux exigent une précision extrême sur les données d'écoute, pour le calcul des royalties. 
+	  Et l'enjeu business — sans données de qualité, les algorithmes de recommandation se dégradent. »</p>
+	  <p> RGPD — Règlement général sur la protection des données (Union européenne)<br>
+CCPA/CPRA — réglementation californienne sur la protection des données<br>
+LGPD — Lei Geral de Proteção de Dados (Brésil)</p>
+    </blockquote>
+
+    <h3>3. Maturité actuelle</h3>
+    <span class="repere">à dire</span>
+    <blockquote class="dire">
+      <p>« Le modèle CMMI Data nous donne une grille d'évaluation objective. Spotify est au niveau 3, 'Défini' : les processus existent et sont documentés. »</p>
+      <p>« Pour atteindre le niveau 4, 'Mesuré', il faut aller plus loin : un <b>Data Quality Score mesuré en continu, une traçabilité de bout en bout.</b> <br>Ce sont précisément les gaps <br>- lineage incomplet, <br>- silos inter-squads, <br>formation insuffisante — que le programme proposé adresse.. »</p>
+    <p><b>(CMMI) Le Modèle intégré de maturité des capacités</b>  
+est un référentiel de bonnes pratiques qui aide 
+les organisations à améliorer leurs processus et leur efficacité opérationnelle</p>
+	</blockquote>
+
+    <h3>4. Cadre de gouvernance</h3>
+    <span class="repere">à dire</span>
+    <blockquote class="dire">
+      <p>Pour leur Gouvernace « J'ai choisi un modèle hybride, plutôt que centralisé, parce que Spotify est construit sur l'autonomie de ses équipes. Un modèle centralisé aurait été un contresens culturel. »</p>
+      <p>« Le Centre d'Excellence définit les standards. <br>du coup Les domaines métier peuvent les appliquent avec leurs propres <br>Data Owners et Data Stewards. »</p>
+    </blockquote>
+
+    <h3>5. Rôles et responsabilités</h3>
+    <span class="repere">à dire</span>
+    <blockquote class="dire">
+	<p>CDO — Chief Data Officer<br>
+DPO — Data Protection Officer<br>
+CISO — Chief Information Security Officer
+<br>CFO — Chief Financial Officer<br> 
+<b>Custodian — Gestionnaire / gardien des données. technique</b><br>
+<br>
+RACI — Responsable, Approbateur, Consulté, Informé.</p>
+	<p>« Le Data Owner est un manager métier, responsable de la qualité et de l'utilisation de son domaine de données. Le Data Steward est son bras opérationnel technique. »</p></blockquote>
+
+    <h3>6. Conformité réglementaire</h3>
+    <span class="repere">à dire</span>
+    <blockquote class="dire">
+      <p>« Spotify opère dans 184 pays, avec trois régimes réglementaires à gérer en même temps. 
+	  Plutôt que des systèmes différents pour chaque règle, j'ai choisi la stratégie de la norme la plus 
+	  contraignante, appliquée à tout le monde. »
+	  <br> <b>Lineage = traçabilité de la donnée. </b>
+	  <br> QSA — Qualified Security Assessor → évaluateur de sécurité qualifié<br>
+PCI DSS — Payment Card Industry Data Security Standard → norme de sécurité des données de l’industrie des cartes de paiement</p>
+    </blockquote>
+
+    <h3>7. Stack technologique</h3>
+    <span class="repere">à dire</span>
+    <blockquote class="dire"><p>« Je propose Apache Atlas, un outil gratuit, plutôt qu'un outil payant très coûteux, car son niveau de fonctionnalités suffit pour les premières phases du projet. »</p></blockquote>
+
+    <h3>8. Roadmap</h3>
+    <span class="repere">à dire</span>
+    <blockquote class="dire"><p>« Le déploiement dure 18 mois, en 4 phases. Il commence par le département Finance, là où les données sont les plus sensibles et le sponsor le plus motivé. »</p></blockquote>
+
+    <h3>9. Risques et conclusion</h3>
+    <span class="repere">à dire</span>
+    <blockquote class="dire">
+      <p>«Par cette proposition  Aucun risque ne reste en zone critique, grâce au principe de <b>protection des données dès la conception.</b> »</p>
+      <p>« Pour conclure, la gouvernance des données n'est pas une contrainte réglementaire. C'est un investissement stratégique, avec un retour financier qui se justifie même sans compter le risque évité. »</p>
+    </blockquote>
+  </section>
+
+  <!-- ================================================================= BLOC 2 -->
+  <section class="bloc b2" id="bloc2">
+    <div class="bloc-head">
+      <div class="bloc-eyebrow">Bloc 2</div>
+      <h2>Architecture de données — Affaire Stripe</h2>
+    </div>
+
+    <div class="partie-titre">Le cours</div>
+
+    <h3>Ce qui était attendu</h3>
+    <p>Stripe traite des paiements pour des millions de commerçants. Le projet demande de concevoir une architecture de données complète pour Stripe.</p>
+    <p>Trois types de bases de données doivent être conçus. Un système pour les transactions. Un système pour l'analyse. Un système flexible, pour des données moins structurées.</p>
+    <p>Il faut aussi un pipeline qui relie ces trois systèmes entre eux, et un plan de sécurité qui respecte le RGPD et le PCI-DSS.</p>
+    <p>Les livrables attendus : un schéma d'architecture complet, un schéma pour chaque type de base, un document sur le pipeline, un plan de sécurité, une stratégie pour le machine learning, et des exemples de requêtes.</p>
+
+    <h3>Vocabulaire</h3>
+    <div class="mot"><span class="terme">OLTP</span>Le système qui enregistre chaque transaction, une par une, tout de suite.</div>
+    <div class="mot"><span class="terme">OLAP</span>Le système qui sert à analyser beaucoup de données à la fois, par exemple pour des rapports.</div>
+    <div class="mot"><span class="terme">NoSQL</span>Une base de données flexible, qui n'impose pas un format de tableau fixe.</div>
+    <div class="mot"><span class="terme">ACID</span>Quatre garanties qui assurent qu'une transaction ne se perd jamais, et n'est jamais faite à moitié.</div>
+    <div class="mot"><span class="terme">CDC</span>Une technique qui repère chaque changement dans une base de données, pour le recopier ailleurs, en direct.</div>
+    <div class="mot"><span class="terme">Schéma en étoile</span>Une façon d'organiser des données pour l'analyse, avec une table centrale et des tables autour.</div>
+
+    <div class="partie-titre">Le script à dire</div>
+
+    <h3>1. Vue d'ensemble</h3>
+    <span class="repere">à dire</span>
+    <blockquote class="dire"><p>« Stripe traite plus de 1 000 milliards de dollars par an. Le défi est triple : garantir des transactions fiables en moins de 100 millisecondes, analyser des milliards de lignes pour la fraude, et rester conforme au PCI-DSS et au RGPD. »</p></blockquote>
+
+    <h3>2. Les 3 couches de données</h3>
+    <span class="repere">à dire</span>
+    <blockquote class="dire">
+      <p>« Le premier système est Amazon Aurora PostgreSQL. C'est la source de vérité financière : chaque transaction est garantie, et en cas de panne, le basculement est automatique en moins de 30 secondes. »</p>
+      <p>« Le deuxième système est Amazon Redshift, pour les requêtes analytiques sur des milliards de lignes. »</p>
+      <p>« Le troisième système combine DynamoDB et Redis. DynamoDB stocke les données utilisées par le modèle de fraude, en moins de 5 millisecondes. »</p>
+	  <p><b>La clé de partition et la clé de tri permettent de structurer les différents objets</b></p>
+    </blockquote>
+
+    <h3>3. Le pipeline d'intégration</h3>
+    <span class="repere">à dire</span>
+    <blockquote class="dire"><p>« Le pipeline repose sur le Change Data Capture, avec l'outil Debezium. 
+	<b>Debezium = CDC → capture les changements d'une base en temps réel.</b>Il lit le journal interne de la base, sans jamais ralentir les transactions. Les événements passent ensuite par Kafka, avant d'aller vers les autres systèmes. »</p></blockquote>
+
+    <h3>4. Sécurité et conformité</h3>
+    <span class="repere">à dire</span>
+    <blockquote class="dire"><p>« Le point le plus critique pour la sécurité des cartes bancaires : nous ne stockons jamais le numéro complet d'une carte. Il est transformé dès sa réception. »</p></blockquote>
+
+    <h3>5. En production</h3>
+    <span class="repere">à dire</span>
+    <blockquote class="dire"><p>« En production, cette architecture atteint une disponibilité de 99,99 %, 
+	soit moins de 52 minutes d'indisponibilité par an. »
+	<br><b>PRA</b> RTO — Recovery Time Objective → objectif de délai de reprise
+RPO — Recovery Point Objective → objectif de point de reprise<br>
+RTO — Recovery Time Objective → objectif de délai de reprise
+RPO — Recovery Point Objective → objectif de point de reprise
+PRA</p></blockquote>
+  </section>
+
+  <!-- ================================================================= BLOC 3 -->
+  <section class="bloc b3" id="bloc3">
+    <div class="bloc-head">
+      <div class="bloc-eyebrow">Bloc 3</div>
+      <h2>Détection automatique de fraude</h2>
+    </div>
+
+    <div class="partie-titre">Le cours</div>
+
+    <h3>Ce qui était attendu</h3>
+    <p>La consigne part d'un vrai problème : plus d'un milliard d'euros de fraude par carte bancaire, chaque année, en Europe.</p>
+    <p>Deux besoins précis sont demandés. Une alerte, dès qu'une fraude est repérée. Et un rapport, chaque matin, sur tous les paiements de la veille.</p>
+    <p>La consigne insiste sur un point important : ce n'est pas l'algorithme qui compte le plus. C'est le pipeline de données autour de lui.</p>
+    <p>La consigne dit aussi autre chose, moins souvent retenue : elle propose une infrastructure d'exemple, mais elle précise que s'en écarter est possible, voire attendu. Le minimum demandé tient en trois mots : un élément qui collecte et stocke, un élément qui consomme, un processus qui transforme la donnée.</p>
+    <p>Les livrables attendus : un schéma de l'infrastructure choisie, avec les raisons de ce choix. Tout le code source. Et une vidéo qui montre que ça fonctionne vraiment.</p>
+
+    <div class="mot" style="border-left-color:var(--b3)">
+      <span class="terme" style="color:var(--b3)">Deux architectures à distinguer</span>
+      Ce bloc a deux visages, et il faut les garder séparés dans sa tête. Le premier est une <strong>architecture cible</strong> : une vision ambitieuse, à l'échelle d'une grande banque, avec des outils lourds comme Kafka, Flink ou Airflow. C'est elle que décrit le script officiel de présentation en 5 minutes. Le second est <strong>l'architecture réellement décidée et construite</strong>, sous le nom <strong>FraudHunter</strong> : plus petite, plus simple, entièrement locale, mais qui tourne vraiment. C'est elle qu'expliquent le cours et le script ci-dessous — pour pouvoir en parler avec précision si le jury pose la question.
+    </div>
+
+    <h3>Vocabulaire (architecture réellement construite : FraudHunter)</h3>
+    <div class="mot"><span class="terme">MQTT / Mosquitto</span>Le langage de messages utilisé ici, et le petit programme central qui fait passer ces messages. Il remplace Kafka, plus lourd, de la vision cible.</div>
+    <div class="mot"><span class="terme">Node-RED</span>Un outil visuel. Il va chercher un nouveau paiement toutes les 5 secondes, sur une API existante, et l'envoie sur MQTT.</div>
+    <div class="mot"><span class="terme">Consumer</span>Le programme Python qui reçoit chaque paiement, calcule un score de fraude, l'enregistre, et envoie une alerte si besoin.</div>
+    <div class="mot"><span class="terme">AutoGluon</span>L'outil qui entraîne le modèle. Il essaie plusieurs méthodes tout seul, et garde la meilleure.</div>
+    <div class="mot"><span class="terme">MLflow</span>L'outil qui garde en mémoire chaque version du modèle entraîné, et retient laquelle est « en production ».</div>
+    <div class="mot"><span class="terme">Gitea</span>Un dépôt de code, gardé en local. Il a son propre système d'intégration continue, comme GitHub.</div>
+    <div class="mot"><span class="terme">Signal « modèle mis à jour »</span>Un petit message envoyé par MQTT, dès qu'un nouveau modèle est prêt. C'est lui qui dit au Consumer de recharger le modèle, sans jamais redémarrer le programme.</div>
+
+    <div class="partie-titre">Le script à dire</div>
+    <p style="font-size:15px;color:var(--text-dim)">Ce script décrit FraudHunter, l'architecture réellement construite — pas la version idéale à grande échelle du document officiel.</p>
+
+    <h3>1. Le problème</h3>
+    <span class="repere">à dire</span>
+    <blockquote class="dire"><p>« La fraude par carte de crédit représente plus d'un milliard d'euros de pertes annuelles, rien que dans l'Union Européenne. Le besoin est double : une alerte dès qu'une fraude est détectée, et un rapport chaque matin sur les paiements de la veille. »</p></blockquote>
+
+    <h3>2. Le choix : rester simple, et 100 % local</h3>
+    <span class="repere">à dire</span>
+    <blockquote class="dire">
+      <p>« Une architecture cible, à l'échelle d'une grande banque, utiliserait Kafka, Flink, Airflow. J'ai choisi une autre voie, plus modeste mais entièrement fonctionnelle : ce projet s'appelle FraudHunter, et il tourne uniquement en local, sans aucun service payant. »</p>
+      <p>« Le cœur du système reste le même dans l'esprit : un élément qui collecte, un élément qui consomme, un processus qui transforme. Ici, Node-RED collecte, MQTT fait circuler les messages, et un programme Python consomme et calcule le score. »</p>
+    </blockquote>
+
+    <h3>3. Le chemin d'un paiement</h3>
+    <span class="repere">à dire</span>
+    <blockquote class="dire">
+      <p>« Toutes les 5 secondes, Node-RED va chercher un nouveau paiement, et le publie sur Mosquitto, notre broker MQTT local. Le Consumer, abonné à ce canal, reçoit chaque paiement, calcule un score de fraude avec un modèle AutoGluon, puis enregistre le résultat dans PostgreSQL. »</p>
+      <p>« Si le score dépasse le seuil, une alerte e-mail part automatiquement. Et si aucune adresse n'est configurée, l'alerte s'affiche simplement dans les journaux du programme, plutôt que d'échouer silencieusement. »</p>
+    </blockquote>
+
+    <h3>4. Le réentraînement, sans jamais couper le service</h3>
+    <span class="repere">à dire</span>
+    <blockquote class="dire">
+      <p>« Chaque push de code déclenche automatiquement, via Gitea, un nouvel entraînement du modèle. S'il est meilleur que le précédent, il est promu dans MLflow, et un signal est envoyé par MQTT. »</p>
+      <p>« Le Consumer reçoit ce signal, et recharge le nouveau modèle tout seul. Il n'a jamais besoin d'être redémarré à la main. »</p>
+    </blockquote>
+
+    <h3>5. Bilan honnête</h3>
+    <span class="repere">à dire</span>
+    <blockquote class="dire">
+      <p>« Un premier entraînement réel donne une exactitude de 99,85 %. Ce chiffre est trompeur : les fraudes sont rares, donc un modèle qui ne se trompe presque jamais peut quand même en laisser passer beaucoup. »</p>
+      <p>« Le chiffre qui compte vraiment ici, c'est le rappel : environ 74 %. Cela veut dire qu'une fraude sur quatre n'est pas détectée par ce premier modèle. Je préfère le dire clairement plutôt que de le cacher derrière l'exactitude. »</p>
+      <p>« En corrigeant le code, j'ai aussi trouvé deux erreurs bien réelles. La comparaison entre deux versions de modèle utilisait par défaut des métriques copiées d'un projet totalement différent, sans rapport avec la fraude. Et la sélection du dernier entraînement ne garantissait pas de prendre le plus récent. Les deux ont été corrigés. »</p>
+      <p>« Ce qui reste à faire, en toute transparence : vérifier la chaîne Gitea de bout en bout avec un vrai démarrage Docker, et confirmer que le tableau de bord Grafana s'affiche correctement. »</p>
+		<p>J’ai un besoin de circulation événementielle entre plusieurs composants.
+Le volume et le niveau de criticité du projet ne justifient pas une infrastructure
+plus lourde. J’ai donc retenu MQTT dans cette version, en conservant la possibilité
+de faire évoluer le composant de transport si le besoin change</p>
+	</blockquote>
+  </section>
+
+  <!-- ================================================================= BLOC 4 -->
+  <section class="bloc b4" id="bloc4">
+    <div class="bloc-head">
+      <div class="bloc-eyebrow">Bloc 4 — Projet final</div>
+      <h2>WATT_ON_THE_WEATHER</h2>
+    </div>
+
+    <div class="partie-titre">Le cours</div>
+
+    <h3>Ce qui était attendu</h3>
+    <p>Ce dernier bloc est différent des trois premiers. Il demande de tout faire seul, du début à la fin.</p>
+    <p>Il faut d'abord trouver son propre jeu de données. Ensuite, entraîner un modèle. Puis construire tout ce qui l'entoure : le déploiement, la surveillance, et le réentraînement automatique.</p>
+    <p>Le déploiement doit se faire avec Docker, derrière une API. Il faut aussi une automatisation des tests et du déploiement, une surveillance de la dérive du modèle, et un suivi des versions.</p>
+    <p>Le travail est noté sur cinq points : la qualité du modèle, la complétude du pipeline, le niveau d'automatisation, la capacité à monter en charge et à surveiller, et la qualité de la documentation.</p>
+    <p>Ce cahier des charges ne dit pas quels outils précis utiliser. C'est un choix libre. Ici, le projet prédit la consommation électrique nationale à cinq jours, à partir de la météo et du calendrier.</p>
+
+    <h3>Vocabulaire</h3>
+    <div class="mot"><span class="terme">MLOps</span>L'ensemble des pratiques qui font vivre un modèle en production, pas seulement l'entraîner une fois.</div>
+    <div class="mot"><span class="terme">CI/CD</span>L'automatisation des tests et du déploiement, à chaque changement de code.</div>
+    <div class="mot"><span class="terme">Dérive</span>Quand un modèle devient petit à petit moins bon, parce que la réalité a changé autour de lui.</div>
+    <div class="mot"><span class="terme">MQTT</span>Un langage de messages simple. Utilisé dans la première version du projet.</div>
+    <div class="mot"><span class="terme">Airflow</span>Un outil qui planifie et déclenche des tâches automatiquement.</div>
+    <div class="mot"><span class="terme">OPC-UA</span>Un langage de communication industriel, très utilisé dans l'énergie. Utilisé dans une variante du projet, à la place de MQTT.</div>
+<div class="mot"><span class="terme">MAPE — </span>Mean Absolute Percentage Error → erreur absolue moyenne en pourcentage.</div>
+    <div class="partie-titre">Le script à dire</div>
+
+    <h3>1. Le besoin</h3>
+    <span class="repere">à dire</span>
+    <blockquote class="dire">
+      <p>« Prévoir la consommation électrique à quelques jours d'horizon conditionne l'équilibrage offre-demande et les achats d'énergie. Sans prévision, la gestion se fait en réaction. Avec une prévision à cinq jours, la décision se prend en amont. »</p>
+      <p>« Le cahier des charges ne demande pas seulement un modèle qui prédit bien. Il demande un pipeline complet, qui fonctionne en conditions réelles, pas seulement sur le papier. »</p>
+    </blockquote>
+
+    <h3>2. Démarche et architecture</h3>
+    <span class="repere">à dire</span>
+    <blockquote class="dire">
+      <p>« Trois principes ont guidé chaque choix. Couvrir le cahier des charges point par point. Utiliser des outils déjà maîtrisés. Et rester simple. »</p>
+      <p>« Les données historiques sont réparties en trois groupes. Un groupe pour entraîner le modèle. Un groupe jamais vu, pour décider si un nouveau modèle mérite d'être promu. Et un dernier groupe, rejoué jour après jour, pour simuler un flux en temps réel. »</p>
+    </blockquote>
+
+    <h3>3. La boucle de simulation</h3>
+    <span class="repere">à dire</span>
+    <blockquote class="dire"><p>« Chaque cycle révèle un nouveau jour, compare la prédiction au réel, calcule un indicateur d'erreur glissant. Si cet indicateur dépasse un seuil, une demande de réentraînement est envoyée automatiquement. »</p></blockquote>
+
+    <h3>4. Réentraînement non bloquant</h3>
+    <span class="repere">à dire</span>
+    <blockquote class="dire"><p>« Deux façons de déclencher un réentraînement : un push de code, ou une dérive détectée. Dans les deux cas, l'API continue de répondre normalement pendant tout l'entraînement. Le nouveau modèle ne prend le relais que s'il est meilleur que l'ancien. »</p></blockquote>
+
+    <h3>5. Bilan et variantes</h3>
+    <span class="repere">à dire</span>
+    <blockquote class="dire">
+      <p>« Ce pipeline a été exécuté de bout en bout, sur des données réelles. La CI/CD est passée avec succès. La non-interruption du service a été vérifiée pendant un vrai réentraînement. »</p>
+      <p>« J'ai ensuite exploré deux autres variantes, pour mon propre apprentissage. Une avec Airflow, à la place de l'outil de déclenchement d'origine. Une autre avec OPC-UA, à la place du langage de messages d'origine. Dans les deux cas, l'architecture reste la même. Seule change la façon dont les services communiquent. »</p>
+      <p>« Je le dis avec honnêteté : ces deux variantes n'ont pas encore tourné en conditions réelles, contrairement à la version de référence. »</p>
+    </blockquote>
+  </section>
+
+  <footer>
+    Cours et script — Certification RNCP38777, blocs 1 à 4 · Document personnel, mis en forme pour une lecture confortable.
+  </footer>
+
+</div>
+</body>
+</html>
